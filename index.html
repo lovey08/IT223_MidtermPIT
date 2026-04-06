@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovely Alabe | Resume</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-name">LA</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="darkToggle">◐</button>
+  </nav>
+
+  <header id="home">
+    <div class="header-left">
+      <p class="header-tag">— Web Designer Resume</p>
+      <h1 id="heroName">Lovely Alabe</h1>
+      <p class="header-sub" id="welcomeText">Aspiring Web Designer &amp; IT Student</p>
+      <p><strong>Email:</strong> loveyalabe@gmail.com</p>
+      <p><strong>Phone Number:</strong> +63 909 298 4300</p>
+      <div id="hireBadge">
+        <span id="badgeDot"></span>
+        <span id="badgeText">Available for Hire</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <img src="assets/profile.jpg" alt="Profile photo of Lovely Alabe" />
+    </div>
+  </header>
+
+  <section id="about">
+    <span class="section-label">01 — About</span>
+    <h2>About Me</h2>
+    <p>
+      I am Lovely Alabe, a passionate Web Designer currently pursuing a Bachelor of Science in Information Technology.
+      I have a deep appreciation for clean layouts and thoughtful design, and I am dedicated to crafting visually appealing
+      and user-friendly websites that combine creativity with functionality. As a student, I am continuously expanding my
+      knowledge and skills in both design and development, with the goal of building meaningful and impactful digital experiences.
+    </p>
+  </section>
+
+  <section id="education">
+    <span class="section-label">02 — Education</span>
+    <h2>Educational Background</h2>
+
+    <div class="edu-card">
+      <div class="edu-year">2010 – 2016</div>
+      <div class="edu-info">
+        <h3>Elementary</h3>
+        <p>Amoros, El Salvador City</p>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-year">2016 – 2020</div>
+      <div class="edu-info">
+        <h3>Junior High School</h3>
+        <p>St. Joseph Academy of El Salvador City</p>
+      </div>
+    </div> 
+
+    <div class="edu-card">
+      <div class="edu-year">2020 – 2022</div>
+      <div class="edu-info">
+        <h3>Senior High School</h3>
+        <p>Capitol University</p>
+      </div>
+    </div>
+
+    <div class="edu-card">
+      <div class="edu-year">2022 – Present</div>
+      <div class="edu-info">
+        <h3>College</h3>
+        <p>University of Science and Technology of Southern Philippines</p>
+        <p class="edu-dept">Bachelor of Science in Information Technology</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <span class="section-label">03 — Skills</span>
+    <h2>Skills</h2>
+    <button id="toggleSkills">▾ Show / Hide Skills</button>
+    <div id="skillsWrap">
+      <ul id="skillsList">
+        <li data-level="95">HTML5 &amp; CSS</li>
+        <li data-level="85">Responsive Web Design</li>
+        <li data-level="80">JavaScript (Basic to Intermediate)</li>
+        <li data-level="75">jQuery</li>
+        <li data-level="70">UI/UX Design Principles</li>
+        <li data-level="55">Version Control (Git)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <span class="section-label">04 — Projects</span>
+    <h2>Projects</h2>
+    <div class="filter-btns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="system">System</button>
+      <button class="filter-btn" data-filter="design">Design</button>
+    </div>
+    <input type="text" id="search" placeholder="Search projects..." />
+    <ul id="projectList">
+      <li data-cat="web">
+        <span class="proj-title">Restaurant Landing Page</span>
+        <span class="proj-tag">Web</span>
+      </li>
+      <li data-cat="web">
+        <span class="proj-title">Online Food Ordering UI</span>
+        <span class="proj-tag">Web</span>
+      </li>
+      <li data-cat="web">
+        <span class="proj-title">Event Registration Form</span>
+        <span class="proj-tag">Web</span>
+      </li>
+      <li data-cat="system">
+        <span class="proj-title">Student Registration System</span>
+        <span class="proj-tag">System</span>
+      </li>
+      <li data-cat="system">
+        <span class="proj-title">Library Management System</span>
+        <span class="proj-tag">System</span>
+      </li>
+      <li data-cat="design">
+        <span class="proj-title">Mobile App UI Mockup</span>
+        <span class="proj-tag">Design</span>
+      </li>
+      <li data-cat="design">
+        <span class="proj-title">Brand Identity Concept</span>
+        <span class="proj-tag">Design</span>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <span class="section-label">05 — Contact</span>
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <div class="form-row">
+        <input type="text" id="name" placeholder="Your Name" />
+        <input type="email" id="email" placeholder="Your Email" />
+      </div>
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message →</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <div id="hireOverlay">
+    <div id="hirePanel">
+      <button id="hireClose">✕</button>
+      <h3>Hire Me</h3>
+      <p>I'm currently open for freelance projects, internships, and collaborations. Let's build something great together!</p>
+      <ul>
+        <li>📧 loveyalabe@gmail.com</li>
+        <li>📱 +63 909 298 4300</li>
+        <li>📍 Cagayan de Oro, Philippines</li>
+      </ul>
+      <a href="#contact" id="hireCTA">Send Me a Message →</a>
+    </div>
+  </div>
+
+  <button id="hireMeBtn">💼 Hire Me</button>
+
+  <footer>
+    <p>© 2025 Lovely Alabe · Built with HTML, CSS &amp; JS</p>
+  </footer>
+
+</body>
+</html>
